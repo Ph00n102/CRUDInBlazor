@@ -1,0 +1,49 @@
+@page "/products/create"
+
+@using CRUDInBlazor.Models
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<CRUDInBlazor.Data.MyAppDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Create</PageTitle>
+<h1>Create</h1>
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm  method="post" Model="Products" OnValidSubmit="AddProduct" FormName="Create" Enhance="true">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+            <div class="md-3">
+                <label for="name" class="form-label">Name : </label>
+                <InputText id="name" @bind-Value="Products.Name" class="form-control" />
+                <ValidationMessage For="() => Products.Name" class="text-danger" />
+            </div>
+            <div class="md-3">
+                <label for="Price" class="form-label">Price : </label>
+                <InputNumber id="Price" @bind-Value="Products.Price" class="form-control" />
+                <ValidationMessage For="() => Products.Price" class="text-danger" />
+            </div>
+            <div class="md-3">
+                <label for="qty" class="form-label">Qty : </label>
+                <InputNumber id="qty" @bind-Value="Products.Qty" class="form-control" />
+                <ValidationMessage For="() => Products.Qty" class="text-danger" />
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </EditForm>
+    </div>
+</div>
+<div>
+    <a href="/products" class="btn btn-outline-secondary">Black To List</a>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    public Product Products { get; set; } = new();
+
+    private async Task AddProduct()
+    {
+       
+        NavigationManager.NavigateTo("/");
+    }
+}

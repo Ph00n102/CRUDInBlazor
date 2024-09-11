@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CRUDInBlazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CRUDInBlazor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CRUDInBlazor.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\CRUDInBlazor\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\CRUDInBlazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\CRUDInBlazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\CRUDInBlazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CRUDInBlazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CRUDInBlazor.props",
+      "PackagePath": "build\\CRUDInBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CRUDInBlazor.props",
+      "PackagePath": "buildMultiTargeting\\CRUDInBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CRUDInBlazor.props",
+      "PackagePath": "buildTransitive\\CRUDInBlazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
